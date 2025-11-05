@@ -1,34 +1,27 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Header from './components/Header'
 
 
 function App() {
-  const [akapit, setAkapit] = useState('')
+  const [current, setCurrent] = useState(null)
   const [error, setError] = useState(null)
-
-  useEffect(() => {
-    if(akapit.length > 10){
-      setError("Przekroczyłeś ilość znaków");
-    } else {
-      setError(null);
-    }
-  },[akapit])
 
   return (
     <>
-      <h1>Hello react {akapit}</h1>
+      <h1>Unit converter</h1>
 
-      <input onChange={(e) => setAkapit(e.target.value)} />
+      <ul>
+        <li onClick={() => setCurrent(0)}>Kilometre &rarr; Mile</li>
+        <li onClick={() => setCurrent(1)}>Degree &rarr; Grad</li>
+        <li onClick={() => setCurrent(2)}>PLN &rarr; EURO</li>
+        <li onClick={() => setCurrent(3)}>Litre &rarr; Galon</li>
+        <li onClick={() => setCurrent(4)}>Newtons &rarr; Poundals</li>
+        <li onClick={() => setCurrent(5)}>Pascal &rarr; Bar</li>
+        <li onClick={() => setCurrent(6)}>Kg &rarr; Pound</li>
+      </ul>
 
-      <p>{akapit}</p>
 
-      <Header content={akapit}/>
 
-      {error && <div style={{
-        color: 'red',
-        backgroundColor: "yellow"
-      }}>{error}</div>}
     </>
   )
 }
