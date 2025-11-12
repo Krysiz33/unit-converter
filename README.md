@@ -21,3 +21,6 @@ npm install
 
 uruchomienie:
 npm run dev
+
+
+https://bulldogjob.pl/readme/jak-stworzyc-idealny-pull-request-w-5-krokach
