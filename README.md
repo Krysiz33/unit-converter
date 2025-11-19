@@ -24,7 +24,7 @@ npm run dev
 
 ZADANIE:
 - W swoim komponencie sprawdzaj wartość przychodzącą i po przekroczeniu granicznej wartości (ustalonej dowolnie) zmień kolor wyniku na czerwony.
-- Dodaj do swojego komponentu dowolną ikonę z dowolnej biblioteki związaną z twoimi obliczeniami
+- Dodaj do swojego komponentu dowolną ikonę z dowolnej biblioteki (lucide-react react-icons lub inne) związaną z twoimi obliczeniami
 
 
 https://bulldogjob.pl/readme/jak-stworzyc-idealny-pull-request-w-5-krokach
